@@ -3,7 +3,22 @@ name = "ranlux_rs"
 version = "0.1.0"
 authors = ["Aliénore Bouttefeux"]
 edition = "2018"
-
+readme = "README.md"
+repository = "https://github.com/ABouttefeux/ranlux_rs"
+categories = ["Algorithms", "Science"]
+description = "Luxury random numbers"
+keywords = ["RNG", "PRGN", "ranlux", "ranlxd", "ranlxs"]
+publish = false
+license = "GPL-3.0-or-later"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+serde-serialize = ["serde"]
+
 [dependencies]
+rand = "0.8.3"
+rand_core = "0.6.2"
+serde = { version = "1.0", features = ["derive"], optional = true }
+
+[dev-dependencies]
+criterion = "0.3"

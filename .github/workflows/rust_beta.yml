@@ -22,7 +22,7 @@ jobs:
         toolchain: beta
     
     - name: Build beta
-      run: cargo build --all --verbose --features serde-serialize
+      run: cargo build --all --verbose
     
     - name: Run tests beta
-      run: cargo test --all --verbose --features serde-serialize
+      run: cargo test --all --verbose

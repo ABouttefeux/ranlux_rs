@@ -1,7 +1,6 @@
 
-
 #![allow(clippy::needless_return)]
-#![warn(clippy::as_conversions)]
+#![allow(clippy::as_conversions)]
 #![warn(clippy::cast_precision_loss)]
 #![warn(clippy::cast_sign_loss)]
 #![warn(clippy::cast_possible_truncation)]
@@ -25,3 +24,11 @@
 #![warn(clippy::unreadable_literal)]
 #![warn(clippy::unseparated_literal_suffix)]
 #![warn(clippy::unused_self)]
+
+
+extern crate rand;
+extern crate rand_core;
+
+pub mod ranlxd;
+pub mod ranlxs;
+pub mod ranlx_full_word;
