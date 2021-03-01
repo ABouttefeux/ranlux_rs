@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["ranlux_rs"] = [{"text":"impl Freeze for Ranlxd","synthetic":true,"types":[]},{"text":"impl Freeze for Ranlxs","synthetic":true,"types":[]},{"text":"impl Freeze for SeedRanlxs","synthetic":true,"types":[]},{"text":"impl Freeze for RanlxFullWord32","synthetic":true,"types":[]},{"text":"impl Freeze for SeedRanlxFullWorld32","synthetic":true,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

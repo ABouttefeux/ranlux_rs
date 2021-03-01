@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["ranlux_rs"] = [{"text":"impl RefUnwindSafe for Ranlxd","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for Ranlxs","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for SeedRanlxs","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for RanlxFullWord32","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for SeedRanlxFullWorld32","synthetic":true,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
