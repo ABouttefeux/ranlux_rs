@@ -29,18 +29,24 @@ impl RngCore for Ranlxd {
 }
 
 impl BlockRngCore for Ranlxd {
-    type Item = u64;
-    type Results = [u64; 24];
+    type Item = f64;
+    type Results = [f64; 24];
     
     fn generate(&mut self, results: &mut Self::Results) {
         todo!()
     }
 }
 
+/// seeding using [Ranlxs::seed_from_u64] is done using [`xoshiro::SplitMix64`]
 impl SeedableRng for Ranlxd {
     type Seed = [u8; 4];
     
     fn from_seed(seed: Self::Seed) -> Self {
         todo!()
+    }
+    
+    fn seed_from_u64(seed: u64) -> Self {
+        let mut rng = rand_xoshiro::SplitMix64::seed_from_u64(seed);
+        Self::from_rng(&mut rng).unwrap()
     }
 }

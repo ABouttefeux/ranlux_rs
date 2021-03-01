@@ -25,10 +25,15 @@
 #![warn(clippy::unseparated_literal_suffix)]
 #![warn(clippy::unused_self)]
 
+#![no_std]
 
-extern crate rand;
 extern crate rand_core;
+extern crate rand_xoshiro;
+#[cfg(feature = "serde-serialize")]
+extern crate serde;
 
+#[macro_use]
+mod common;
 pub mod ranlxd;
 pub mod ranlxs;
 pub mod ranlx_full_word;
